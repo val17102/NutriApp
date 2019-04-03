@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_light"
+    android:id="@+id/aportes"
+    >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:fillViewport="false">
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="47dp"
+                android:layout_height="18dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="301dp"
+                android:layout_marginLeft="52dp"
+                android:layout_marginRight="301dp"
+                android:layout_marginStart="52dp"
+                android:layout_marginTop="8dp"
+                android:text="Peso"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.041" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="280dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="132dp"
+                android:layout_marginLeft="52dp"
+                android:layout_marginRight="132dp"
+                android:layout_marginStart="52dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/icons"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.100000024">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/peso"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="(Kg)" />
+            </android.support.design.widget.TextInputLayout>
+
+
+
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="18dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="60dp"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"
+                android:text="% Líquido"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.206" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textInputLayout"
+                android:layout_width="280dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="132dp"
+                android:layout_marginLeft="52dp"
+                android:layout_marginRight="132dp"
+                android:layout_marginStart="52dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/icons"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.695">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/liquido"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="(Cc)" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="48dp"
+                android:layout_height="18dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="301dp"
+                android:layout_marginLeft="52dp"
+                android:layout_marginRight="301dp"
+                android:layout_marginStart="52dp"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"
+                android:text="CHON"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.041" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="280dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="132dp"
+                android:layout_marginLeft="52dp"
+                android:layout_marginRight="132dp"
+                android:layout_marginStart="52dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/icons"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.695">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/CHON"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="(g)" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="58dp"
+                android:layout_height="18dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="301dp"
+                android:layout_marginLeft="52dp"
+                android:layout_marginRight="301dp"
+                android:layout_marginStart="52dp"
+                android:layout_marginTop="8dp"
+                android:textStyle="bold"
+                android:text="CHOOH"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.041" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="280dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="132dp"
+                android:layout_marginLeft="52dp"
+                android:layout_marginRight="132dp"
+                android:layout_marginStart="52dp"
+                android:background="@color/icons"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.695">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/CHOOH"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="(g)" />
+            </android.support.design.widget.TextInputLayout>
+
+
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="60dp"
+                android:layout_height="18dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="301dp"
+                android:layout_marginLeft="52dp"
+                android:layout_marginRight="301dp"
+                android:layout_marginStart="52dp"
+                android:layout_marginTop="8dp"
+                android:textStyle="bold"
+                android:text="CHO"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.041" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="280dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="132dp"
+                android:layout_marginLeft="52dp"
+                android:layout_marginRight="132dp"
+                android:layout_marginStart="52dp"
+                android:background="@color/icons"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.695">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/CHO"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="(mg)" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="18dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="301dp"
+                android:layout_marginLeft="52dp"
+                android:layout_marginRight="301dp"
+                android:layout_marginStart="52dp"
+                android:layout_marginTop="8dp"
+                android:textStyle="bold"
+                android:text="Na"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.041" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="280dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="132dp"
+                android:layout_marginLeft="52dp"
+                android:layout_marginRight="132dp"
+                android:layout_marginStart="52dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/icons"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.695">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/Na"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="(mEq)" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="18dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="301dp"
+                android:layout_marginLeft="52dp"
+                android:layout_marginRight="301dp"
+                android:layout_marginStart="52dp"
+                android:layout_marginTop="8dp"
+                android:textStyle="bold"
+                android:text="K"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.041" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="280dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="132dp"
+                android:layout_marginLeft="52dp"
+                android:layout_marginRight="132dp"
+                android:layout_marginStart="52dp"
+                android:background="@color/icons"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.695">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/K"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="(mEq)" />
+            </android.support.design.widget.TextInputLayout>
+
+
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="18dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="301dp"
+                android:layout_marginLeft="52dp"
+                android:layout_marginRight="301dp"
+                android:layout_marginStart="52dp"
+                android:layout_marginTop="8dp"
+                android:textStyle="bold"
+                android:text="Ca"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.041" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="280dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="132dp"
+                android:layout_marginLeft="52dp"
+                android:layout_marginRight="132dp"
+                android:layout_marginStart="52dp"
+                android:background="@color/icons"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.695">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/Ca"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="(mEq)" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="18dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="301dp"
+            android:layout_marginLeft="52dp"
+            android:layout_marginRight="301dp"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold"
+            android:text="Mg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.041" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="280dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="132dp"
+                android:layout_marginLeft="52dp"
+                android:layout_marginRight="132dp"
+                android:layout_marginStart="52dp"
+                android:background="@color/icons"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.695">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/Mg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="(mEq)" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="61dp"
+                android:layout_height="18dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="301dp"
+                android:layout_marginLeft="52dp"
+                android:layout_marginRight="301dp"
+                android:layout_marginStart="52dp"
+                android:layout_marginTop="8dp"
+                android:text="Cc MVI"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.041" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="280dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="132dp"
+                android:layout_marginLeft="52dp"
+                android:layout_marginRight="132dp"
+                android:layout_marginStart="52dp"
+                android:background="@color/icons"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.695">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/mvi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="(Cc)" />
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/accent"
+                android:text="Calcular" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
+
+
